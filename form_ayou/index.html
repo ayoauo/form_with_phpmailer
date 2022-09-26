@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Test form</title>
+</head>
+
+<body>
+    <div class="box ayo">
+        <div class="mainImage"></div>
+        <div class="textblock" style="width: 340px;">
+            
+            <div class="wrapper">
+                <div class="form">
+                    <form action="#" id="form" class="form__body">
+                        <h2 class="form__title">Оставить заявку
+                            или задать вопрос</h2>
+                            <div class="form__flex">
+                                <div class="form__item">
+                                    <label for="formName" class="form__label">Имя:</label>
+                                    <input id="formName" type="text" name="name" class="form__input _req">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formEmail" class="form__label">Email:</label>
+                                    <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formMessage" class="form__label">Сообщение:</label>
+                                    <textarea name="Message" id="formMessage" class="form__input"></textarea>
+                                </div>
+                                <div class="form__item">
+                                    <div class="checkbox">
+                                        <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input _req" checked="checked">
+                                        <label for="formAgreement" class="checkbox__label"><span class="checkbox__text">Я <a href="agreement" target="_blank" class="checkbox_link">согласен</a> на обработку персональных данных (в соответствии с Федеральным законом РФ от 27 июля 2006 г. №152-ФЗ «О персональных данных»)</span></label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="form_button">Отправить</button>
+                            </div>
+                            <div class="info">отправлено</div>
+                            <div id="error_text" class="error_text">заполнить поле</div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="background">
+                    <div class="shape"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script type = "module" src="index.js"></script>
+    </body>
+    
+    </html>
